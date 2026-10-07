@@ -1,0 +1,13 @@
+{
+  "name": "agent-skills",
+  "version": "1.0.0",
+  "description": "route-work: size a coding request and route it through Matt Pocock's skills, with one issue per piece of work closed by its PR.",
+  "author": {
+    "name": "Jinho Kim",
+    "url": "https://github.com/JinhoKim46"
+  },
+  "repository": "https://github.com/JinhoKim46/agent-skills",
+  "license": "MIT",
+  "keywords": ["engineering", "workflow", "issues", "planning"],
+  "skills": ["./skills/route-work"]
+}

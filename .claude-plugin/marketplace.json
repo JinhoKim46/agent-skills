@@ -1,0 +1,17 @@
+{
+  "name": "jinho",
+  "owner": {
+    "name": "Jinho Kim",
+    "url": "https://github.com/JinhoKim46"
+  },
+  "description": "Jinho's agent skills for Claude Code.",
+  "plugins": [
+    {
+      "name": "agent-skills",
+      "source": "./",
+      "description": "route-work: one entry point that sizes a coding request and drives Matt Pocock's skills (grill, spec, tickets, tdd, code-review, retro) through GitHub issues and PRs.",
+      "category": "engineering",
+      "keywords": ["engineering", "workflow", "issues", "planning"]
+    }
+  ]
+}
