@@ -35,4 +35,4 @@ Just describe the work. In each repo, the first Medium-or-bigger task runs Matt'
 
 ## Maintaining (owner)
 
-On the owner's machine, `~/.agents/skills/route-work` is a symlink into this repo, so edits here are live in every session. Commit and push after each change. `backup/skill-lock.json` is a copy of `~/.agents/.skill-lock.json`, the list of third-party skills installed with `npx skills`, for reinstalling on a new machine.
+On the owner's machine, `~/.agents/skills/route-work` is a symlink into this repo, so edits here are live in every session. Commit and push after each change.
