@@ -5,6 +5,7 @@ My skills for Claude Code (and other agents that read `SKILL.md` files).
 | Skill | What it is for |
 |---|---|
 | [`route-work`](skills/route-work/SKILL.md) | The one entry point for coding work. Say what you want ("fix #12", "add X"); it sizes the request (Trivial → Small → Medium → Large → Fog) and runs only the [Matt Pocock skills](https://github.com/mattpocock/skills) that size needs: grilling, spec, tickets, tdd, code-review, retro. Tiny and small work makes no issues; bigger work gets one issue per piece, closed by its PR (`Closes #N`). |
+| [`code-flow-report`](https://github.com/JinhoKim46/code-flow-report) | Ask how a Python codebase works and get one offline HTML page that traces it call by call, from the click to the database; every claim is re-checked against the source on each build. Lives in its own repo; this catalogue only lists it. |
 
 ## Install
 
@@ -17,6 +18,7 @@ claude plugin marketplace add mattpocock/skills
 claude plugin install mattpocock-skills@mattpocock
 claude plugin marketplace add JinhoKim46/agent-skills
 claude plugin install agent-skills@jinho
+claude plugin install code-flow-report@jinho   # optional
 ```
 
 Update later with `claude plugin update agent-skills@jinho`. With several Claude config directories, run the commands once per directory with `CLAUDE_CONFIG_DIR=<dir>` set.
