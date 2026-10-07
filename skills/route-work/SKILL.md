@@ -9,7 +9,7 @@ Size the request, pick the lightest route that leaves no decision silently assum
 
 ## Before the first step
 
-1. **The project's rules win.** Read the repo's `CLAUDE.md` (or `AGENTS.md`): its commands, branch/worktree workflow, commit style, PR template and merge rule override anything below. A project-level `route-work` skill shadows this one.
+1. **The project's rules win.** Read the repo's `CLAUDE.md` (or `AGENTS.md`): its commands, branch/worktree workflow, commit style, PR template and merge rule override anything below. Put project-specific routing there (or in a doc it links), not in a project-level `route-work` skill: Claude Code loads a personal skill over a project skill of the same name, so a project copy is silently ignored. A project that needs a different router gives it another name and says so in its `CLAUDE.md`.
 2. **Check the Matt Pocock setup.** It is done when `docs/agents/issue-tracker.md` exists; that file is the only test. Report it in the announcement line (`setup: done` / `setup: missing`).
    - **Done** → the tracker, labels and domain-doc layout are whatever those files say. Use them; don't guess.
    - **Missing, and the route is Trivial or Small** → don't block. Build, and add one line to the final report: "This repo has no `docs/agents/` setup; run it before the next Medium+ task (I can do it)."
