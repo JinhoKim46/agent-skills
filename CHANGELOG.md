@@ -1,5 +1,9 @@
 # Changelog
 
+## Marketplace (2026-10-08)
+
+- `code-flow-report` is no longer listed in the `jinho` marketplace, so this repository covers route-work only. It is still available from [its own repository](https://github.com/JinhoKim46/code-flow-report).
+
 ## 1.1.0 (2026-10-08)
 
 ### route-work

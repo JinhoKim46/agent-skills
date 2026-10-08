@@ -4,7 +4,7 @@
     "name": "Jinho Kim",
     "url": "https://github.com/JinhoKim46"
   },
-  "description": "Jinho's agent skills for Claude Code: route-work and code-flow-report.",
+  "description": "Jinho's agent skills for Claude Code: route-work.",
   "plugins": [
     {
       "name": "agent-skills",
@@ -17,23 +17,6 @@
         "issues",
         "planning"
       ]
-    },
-    {
-      "name": "code-flow-report",
-      "source": {
-        "source": "github",
-        "repo": "JinhoKim46/code-flow-report"
-      },
-      "description": "Interactive, self-checking report of how a Python codebase actually works: layers, user journeys as call chains, boundaries and findings, checked against the source on every build.",
-      "category": "code-understanding",
-      "keywords": [
-        "code-understanding",
-        "architecture",
-        "call-graph",
-        "onboarding",
-        "python"
-      ],
-      "homepage": "https://github.com/JinhoKim46/code-flow-report"
     }
   ]
 }
