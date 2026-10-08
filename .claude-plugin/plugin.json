@@ -1,6 +1,6 @@
 {
   "name": "agent-skills",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "route-work: size a coding request and route it through Matt Pocock's skills, with one issue per piece of work closed by its PR.",
   "author": {
     "name": "Jinho Kim",

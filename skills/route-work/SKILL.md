@@ -68,6 +68,8 @@ Re-check the size, then announce the next phase in the same one-line form, namin
 
 Keep grilling → spec → tickets in **one unbroken context**.
 
+**Phase log (optional).** When the project's `CLAUDE.md`, `AGENTS.md` or `docs/agents/` names a phase log, record every announcement there too (size, phase, issue, time) in the way that file describes. When it names none, skip this. A log that is unavailable or fails never stops the work: carry on and mention it once in the final report.
+
 ## Build
 
 The build is done by this session, by `Agent` with `subagent_type: "general-purpose"`, or by a `Workflow` when the user has opted into multi-agent orchestration. From **Medium** up, build with `tdd` at the seams `to-spec` already agreed with the user, so `tdd`'s own seam question is already answered. For **Trivial / Small**, the `tdd` skill is more process than the change needs: write the test first in the project's usual style when behaviour changes (a bug, a rule, a calculation); text or style changes need no new test.

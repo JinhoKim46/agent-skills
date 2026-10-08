@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 (2026-10-08)
+
+### route-work
+
+- Optional phase log: when a project's `CLAUDE.md`, `AGENTS.md` or `docs/agents/` names one, every phase announcement is also recorded there, and a Large build's dispatcher records each ticket's start, phase changes, PR and close. Projects that name none see no change, and a failing log never stops the work.
+
 ## Marketplace (2026-10-08)
 
 - `code-flow-report` is no longer listed in the `jinho` marketplace, so this repository covers route-work only. It is still available from [its own repository](https://github.com/JinhoKim46/code-flow-report).
