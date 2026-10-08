@@ -10,6 +10,6 @@ Two tickets that rewrite the same function or file block are dependent even if n
 
 ## The dispatcher loop
 
-On each completion: verify, `code-review`, merge (when the project allows), and confirm the ticket closed → recompute the frontier → start what became available → repeat. Each ticket gets its own context; this session only dispatches.
+On each completion: verify, `code-review`, merge (when the project allows), and confirm the ticket closed → recompute the frontier → start what became available → repeat. Each ticket gets its own context; this session only dispatches. When the project names a phase log ([`SKILL.md`](SKILL.md#at-every-phase-boundary)), the dispatcher also records there each ticket's start, its phase changes, its PR and its close.
 
 When every child is closed, run the full suite once on the default branch, then close the parent with a comment listing the merged PRs. That is the one close the dispatcher makes by hand: `to-tickets` leaves parents alone.
