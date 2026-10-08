@@ -1,11 +1,6 @@
 # agent-skills
 
-Agent skills for Claude Code and other agents that read `SKILL.md` files. The main skill, **route-work**, is a single entry point for coding work: describe what you want, and it sizes the request and runs only the planning, building and review steps that size needs, ending in a verified, reviewed pull request.
-
-| Skill | Purpose |
-|---|---|
-| [`route-work`](skills/route-work/SKILL.md) | Sizes a coding request (Trivial → Small → Medium → Large → Fog) and drives [Matt Pocock's skills](https://github.com/mattpocock/skills) (grilling, spec, tickets, tdd, code-review, retro) through GitHub issues and PRs. |
-| [`code-flow-report`](https://github.com/JinhoKim46/code-flow-report) | Builds one offline HTML page that traces how a Python codebase works, call by call, re-checked against the source on every build. Maintained in its own repository; listed here in the marketplace. |
+**route-work** is a single entry point for coding work in Claude Code and other agents that read `SKILL.md` files. Describe what you want, and it sizes the request (Trivial → Small → Medium → Large → Fog) and runs only the planning, building and review steps that size needs, driving [Matt Pocock's skills](https://github.com/mattpocock/skills) (grilling, spec, tickets, tdd, code-review, retro) through GitHub issues and pull requests. Every route ends in a verified, reviewed PR.
 
 ## Why route-work
 
@@ -28,7 +23,6 @@ claude plugin marketplace add mattpocock/skills
 claude plugin install mattpocock-skills@mattpocock
 claude plugin marketplace add JinhoKim46/agent-skills
 claude plugin install agent-skills@jinho
-claude plugin install code-flow-report@jinho   # optional
 ```
 
 Update with `claude plugin update agent-skills@jinho`. If you use several Claude config directories, run the commands once per directory with `CLAUDE_CONFIG_DIR=<dir>` set.
